@@ -1,0 +1,115 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:azure
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+form{
+    padding: 1rem 12rem;
+    /* background-color: lightpink; */
+    margin: 3rem 4rem 3rem 4rem;  
+}
+
+input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color:ivory
+
+}
+
+.form_input{
+    display: inline-flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.agree_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agreebox{
+    display: flex;
+    flex-direction: row;
+}
+
+.reg_word{
+    background-color: rgb(45, 145, 207);
+    border-radius: 2rem;    
+}
+
+.term_word{
+    color: rgb(45, 145, 207)
+}
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+.register_btn{
+    height: 3rem;
+    width: 20%;
+    background-color: rgb(45, 145, 207);
+    border-radius: 2rem;
+    color: azure;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.register_btn:active {
+    background-color: rgb(16, 99, 150);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+.signIn_btn{
+    height: 3rem;
+    width: 20%;
+    background-color: rgb(15, 170, 15);
+    border-radius: 2rem;
+    color: azure;
+}
+
+.signIn_btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+
+footer {
+    margin-top: 3rem;
+    font-size: small;
+    border-style: double none none;
+}
+
+@media only screen and (max-width: 800px)  {
+    /* For tablets: */
+    input{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+@media only screen and (max-width: 450px) {
+    /* For mobile: */
+    
+    form{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+}

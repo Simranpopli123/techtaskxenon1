@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <link rel="stylesheet" href="public/signupcss.css">
+    
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h1 class="form_title">SignUp Form</h1>
+            <div class="form_input">
+                <div class="name_box">
+                    <input type="text" name="fName" placeholder="First Name" required />
+                    <input type="text" name="lName" placeholder="Last Name" required />
+                </div>
+                <input type="number" name="mobile" placeholder="Mobile No."/>
+                <input type="email" name="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                <div class="pswd_box">
+                    <input type="password" name="password" placeholder="Password" required/>
+                    <input type="password" name="password2" placeholder="Confirm Password" required />
+                </div>                    
+            </div>
+            <div class="agree_info">
+                <div class="agreebox">
+                    <input type="checkbox" name="agreebox" class="checkbox">I Agree
+                </div>
+                <p>By clicking 
+                    <button class="reg_word">Register</button>, 
+                    you agree to the <span class="term_word">Term and Conditions</span> set out by this site, including our Cookie Use.
+                </p>
+            </div>
+            
+            <div class="submit">
+                <button class="register_btn">Register</button>
+                <button class="signIn_btn">Sign In</button>
+            </div>
+        </form>
+        
+        <footer class="footer">
+            <address>
+                <p>Antra Inc. 21355 Ridgetop Circle Suite 300 Dulles VA 20166</p>
+                <a href="tel:+17039944545">Phone: 703.994.4545</a> |
+                <a href="fax:+17033732975">Fax: 703.373.2975</a> |
+                <a href="mailto:hr@antra.net">e-mail:hr@antra.net</a> |
+                <a href="http://www.antra.net/">website: www.antra.net</a>
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
